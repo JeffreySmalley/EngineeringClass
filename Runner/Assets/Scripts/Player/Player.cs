@@ -24,14 +24,15 @@ public class Player : MonoBehaviour {
 	}
 	void FixedUpdate(){
 		if(Input.GetKeyDown("w") && jumping == false){
-			transform.rigidbody.AddForce(Vector3.up*300*Time.deltaTime,ForceMode.VelocityChange);
+			transform.rigidbody.AddForce(Vector3.up*320*Time.deltaTime,ForceMode.VelocityChange);
 			jumping = true;
 		}
 
 	}
 	void OnCollisionEnter(Collision C){
 		jumping = false;
-		if (C.gameObject.name == "Log" || C.gameObject.name == ("Door")) {
+		if (C.gameObject.name == "Log" || C.gameObject.name == ("Door") || C.gameObject.name == "MineshaftExit" 
+		    || C.gameObject.name == "Car" && transform.position.y < 2){
 			Application.LoadLevel("Level1");
 		}
 	}

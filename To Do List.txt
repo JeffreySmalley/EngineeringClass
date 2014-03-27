@@ -1,0 +1,17 @@
+Everyone should make their own worlds and add unique enemies/obstacles to them
+since Unity is stupid easy.
+
+Each world should consist of 2 running levels and 1 boss level.
+
+I(Trevor) will be doing 2 worlds since I already started making another one.
+
+We need someone to script the Boss level player script(Free movement, shooting)
+
+Since I already did the Running player script, Jeff or Mike will do that.
+
+Mike has been working on the title screen so that should be done.
+
+We need Health/Lives and a game over screen, etc. Maybe an Overworld if we feel
+fancy.
+
+That's pretty much all, just writing this to keep everyone on track.
