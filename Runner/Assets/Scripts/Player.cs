@@ -31,7 +31,7 @@ public class Player : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision C){
 		jumping = false;
-		if (C.gameObject.tag == "Obstacle"){
+		if (C.gameObject.tag == "Obstacle" && transform.localPosition.y < 2){
 			Application.LoadLevel(Application.loadedLevel);
 		}
 		if(C.gameObject.tag == "Exit"){
