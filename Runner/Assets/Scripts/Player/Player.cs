@@ -4,9 +4,12 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	public bool jumping;
 	public float acceleration;
+	public static int lives;
+	public static int score;
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+
 	}
 	
 	// Update is called once per frame
