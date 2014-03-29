@@ -31,9 +31,11 @@ public class Player : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision C){
 		jumping = false;
-		if (C.gameObject.name == "Log" || C.gameObject.name == ("Door") || C.gameObject.name == "MineshaftExit" 
-		    || C.gameObject.name == "Car" && transform.position.y < 2){
-			Application.LoadLevel("Level1");
+		if (C.gameObject.tag == "Obstacle"){
+			Application.LoadLevel(Application.loadedLevel);
+		}
+		if(C.gameObject.tag == "Exit"){
+			Application.LoadLevel(Application.loadedLevel+1);
 		}
 	}
 }
