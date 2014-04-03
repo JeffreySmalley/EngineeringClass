@@ -4,6 +4,8 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	public bool jumping;
 	public float acceleration;
+	public static float lives;
+	public static float score;
 	// Use this for initialization
 	void Start () {
 	
