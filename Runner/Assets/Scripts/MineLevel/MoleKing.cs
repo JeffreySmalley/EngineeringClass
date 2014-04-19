@@ -16,6 +16,11 @@ public class MoleKing : Actor {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Health < 0) {
+			throw new UnityException("Mole health Cannot fall lower than 0");
+		}
+
 		switch(state){
 		case MoleState.Idle:
 			if(transform.position.x - player.transform.position.x < 20){
